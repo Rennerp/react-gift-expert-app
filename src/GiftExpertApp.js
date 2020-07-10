@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GiftExperApp = () => {
+export const GiftExperApp = ({ defaultCategories = []}) => {
 
-  const [categories, setCategories] = useState(['Samurai x']);
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <>
